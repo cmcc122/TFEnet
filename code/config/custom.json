@@ -1,0 +1,26 @@
+{   
+    "training_environment_setting": {
+        "dataset": "E:/data/chengyin/alchole_health_final"
+    },
+ 
+    "training_process_setting": {
+        "save_weight_folder": "E:/data/code/classification/weights/tfenet/alchole_health_final/12_25",
+        "save_logs_folder": "E:/data/code/classification/logs/tfenet/alchole_health_final/12_25",
+        "checkpoint_enabled": true,
+        "trainset_radio": 0.8
+    },
+    
+    "pretraining": {
+        "enabled": false,
+        "save_name": "E:/data/code/classification/weights/tfenet/alchole_health_final/12_25/best_model.pth"
+    },
+    
+    "hyperparameters": {
+        "batch_size":32,
+        "val_batch_size":32,
+        "epochs":130,
+        "lr": 0.00004,
+        "lr_decay_step": 30,
+        "lr_decay_factor": 0.4
+    }
+}
